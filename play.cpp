@@ -52,6 +52,12 @@ int main()
     stringstream(stringlenth)>>length;
     cout << "the length is: "<<length << '\n';
 
+/*
+    pointers
+*/
 
+    int a =54;
+    cout << "a ="<<a << '\n';
+    cout << "address if a " <<&a<< '\n';
     return 0;
  }
