@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <sstream>
 
 using namespace std;  //namespaces is work most of time but for big project is not that good
 const int weightGoal = 100;//const val cannot change cannot Differences
@@ -42,6 +43,15 @@ int main()
       }
       myfileread.close();
     }
+
+    string stringlenth, stringWidth;
+    float length =0;
+    float width =0;
+    cout<<" Enter the length"<<"\n";
+    getline(cin,stringlenth);
+    stringstream(stringlenth)>>length;
+    cout << "the length is: "<<length << '\n';
+
 
     return 0;
  }
