@@ -1,7 +1,13 @@
 #include <iostream>
+#include <fstream>
+#include <string>
+
 using namespace std;  //namespaces is work most of time but for big project is not that good
 const int weightGoal = 100;//const val cannot change cannot Differences
-int main() {
+
+
+int main()
+{
     cout<< "Hello world, I am ready for C++";//using namespaces dont have to std::cout
     cout<<"int size = "<<sizeof(int)<<"\n";//using sizeof() function to check the size of variables
     cout<<"short size = "<<sizeof(short)<<"\n";
@@ -19,6 +25,23 @@ int main() {
     {
       cout<<"I'm not so sure January is the best month\n";
   }
+
+
+    string line;
+    ofstream myfile("c++.txt"); // using the ofstream function to create new file
+    if (myfile.is_open()) {
+      myfile<<"\n my c++ summary file. \n";// add the writing to the txt file
+      myfile.close();//once open the file  must close it
+    }
+
+    ifstream myfileread("c++.txt");//the ifstream is using to read the file
+    if(myfileread.is_open())
+    {
+      while (getline(myfileread,line)) {//using string to read the file
+        cout << line << '\n';
+      }
+      myfileread.close();
+    }
 
     return 0;
  }
