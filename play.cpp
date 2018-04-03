@@ -46,7 +46,7 @@ int main()
 
     string stringlenth, stringWidth;
     float length =0;
-    float width =0;
+
     cout<<" Enter the length"<<"\n";
     getline(cin,stringlenth);
     stringstream(stringlenth)>>length;
@@ -56,8 +56,13 @@ int main()
     pointers
 */
 
-    int a =54;
-    cout << "a ="<<a << '\n';
-    cout << "address if a " <<&a<< '\n';
+    //int a =54;
+    cout << "length ="<<length << '\n';
+    cout << "address of length " <<&length<< '\n';//once have the data type the have address
+    float *b=&length; //new pointer which derefference by address of length
+    cout << "value after direfference of b " <<b<< '\n';
+    cout << "value after direfference of *b " <<*b<< '\n';
+    cout << "address of b " <<&b<< '\n';//new address of the b make another address
+
     return 0;
  }
