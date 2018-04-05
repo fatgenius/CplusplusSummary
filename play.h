@@ -48,3 +48,42 @@
    cout << "value after direfference of *b " <<*b<< '\n';
    cout << "address of b " <<&b<< '\n';//new address of the b make another address
  }
+
+
+class Dog
+{
+    private:
+        int license;
+    public:
+        Dog();
+        Dog(int licenseIn);
+        void setLicense(int licenseIn);
+        int getLicense();
+        ~Dog();//destru
+        void print();
+};
+
+Dog::Dog()
+{
+   license = 0;
+}
+
+Dog::~Dog()
+{
+    cout<<"\nDeleting the dog"<<"/n"; //this is something program must running;
+}
+Dog::Dog(int licenseIn)
+{
+   license = licenseIn;
+}
+void Dog::setLicense(int licenseIn)
+{
+    license = licenseIn;
+}
+int Dog::getLicense()
+{
+    return license;
+}
+void Dog::print(){
+    cout<<"Dog license is "<<license<<"\n";
+}

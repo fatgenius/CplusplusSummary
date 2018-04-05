@@ -28,7 +28,7 @@ int main()
         if (line>max) {
           reader =max;
         }
-        cout << reader << '\n';
+      //  cout << reader << '\n';
       }
 
       std::cout << "max is: "<<max << '\n';
@@ -46,6 +46,7 @@ int main()
     pointer(length);
     pointeradd(length);
     cout<<"after the change value is "<<length<<'\n';
-
+    Dog dog1(123);
+    dog1.print();
     return 0;
  }
