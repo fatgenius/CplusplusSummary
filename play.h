@@ -54,11 +54,14 @@ class Dog
 {
     private:
         int license;
+        string name;
     public:
         Dog();
-        Dog(int licenseIn);
+        Dog(string nameIn,int licenseIn);
         void setLicense(int licenseIn);
+        void setName(string nameIn);
         int getLicense();
+        string getName();
         ~Dog();//destru
         void print();
 };
@@ -72,18 +75,28 @@ Dog::~Dog()
 {
     cout<<"\nDeleting the dog"<<"/n"; //this is something program must running;
 }
-Dog::Dog(int licenseIn)
+Dog::Dog(string nameIn,int licenseIn)
 {
+   name =nameIn;
    license = licenseIn;
 }
 void Dog::setLicense(int licenseIn)
 {
     license = licenseIn;
 }
+void Dog::setName(string nameIn)
+{
+    name = nameIn;
+}
 int Dog::getLicense()
 {
     return license;
 }
+string Dog::getName()
+{
+    return name;
+}
 void Dog::print(){
+    cout<<"Dog name is "<<name<<"\n";
     cout<<"Dog license is "<<license<<"\n";
 }
