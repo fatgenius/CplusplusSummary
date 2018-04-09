@@ -1,5 +1,5 @@
 //
-// Created by Dawid Zalewski on 19/11/2017.
+// Created on 19/11/2017.
 //
 
 #ifndef INC_SAX_CONTAINER_H
