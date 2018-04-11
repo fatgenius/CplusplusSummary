@@ -1,5 +1,5 @@
 //
-// Created  on 06/11/2017.
+// Created by Dawid Zalewski on 06/11/2017.
 //
 
 #ifndef INC_SAX_VECTOR_H
